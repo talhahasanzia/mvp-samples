@@ -9,7 +9,7 @@ import dagger.Component;
  */
 
 @ApplicationScope // Add this to scope application, this will share objects within a scope
-@Component(modules = {PicassoModule.class})
+@Component(modules = {PicassoModule.class})  // Search for dependencies in these listed modules or components in some cases
 public interface ApplicationContextComponent
 {
 
