@@ -8,10 +8,10 @@ import dagger.Component;
  * Created by tzia on 17-May-17.
  */
 
-
-@Component(modules = ContextModule.class)
+@ApplicationScope // Add this to scope application, this will share objects within a scope
+@Component(modules = {PicassoModule.class})
 public interface ApplicationContextComponent
 {
 
-    Context getContext();
+    @AppContextQualifier Context getContext();
 }

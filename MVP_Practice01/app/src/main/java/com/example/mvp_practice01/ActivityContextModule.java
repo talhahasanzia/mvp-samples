@@ -1,33 +1,36 @@
 package com.example.mvp_practice01;
 
+import android.app.Activity;
 import android.content.Context;
+
+import javax.inject.Named;
 
 import dagger.Module;
 import dagger.Provides;
 
 /**
- * Created by tzia on 17-May-17.
+ * Created by tzia on 18-May-17.
  */
 
 
 @Module
-public class ContextModule
+public class ActivityContextModule
 {
 
+    private final Activity context;
 
-    private final Context context;
-
-    public ContextModule( Context context )
+    public ActivityContextModule( Activity context)
     {
 
-        this.context = context;
+        this.context=context;
     }
+
+
 
 
     @Provides  // provides a dependency
     @ApplicationScope  // has app scope, like same object shared with same instance of a builder()
-    @AppContextQualifier // Custom qualifier
-    // has name qualifier to distinguish this "Context" dependency with any other
+    @Named("activity_context")   // has name qualifier to distinguish this "Context" dependency with any other
     public Context context()
     {
 

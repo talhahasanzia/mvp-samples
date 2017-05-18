@@ -1,6 +1,7 @@
 package com.example.mvp_practice01;
 
 import android.app.Application;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
 /**
@@ -9,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 
 public class MVP_Application extends Application
 {
+
+    Context context;
 
     public static MVP_Application get(AppCompatActivity appCompatActivity)
     {
@@ -27,8 +30,16 @@ public class MVP_Application extends Application
                 .contextModule(contextModule)
                 .build();
 
+        context=component.getContext();
 
 
 
+
+    }
+
+    public Context getMVP_ApplicationContext()
+    {
+
+        return context;
     }
 }
