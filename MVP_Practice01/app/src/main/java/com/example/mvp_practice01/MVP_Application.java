@@ -13,6 +13,9 @@ public class MVP_Application extends Application
 
     Context context;
 
+
+    private ApplicationContextComponent component;
+
     public static MVP_Application get(AppCompatActivity appCompatActivity)
     {
         return (MVP_Application) appCompatActivity.getApplication();
@@ -24,16 +27,23 @@ public class MVP_Application extends Application
     {
         super.onCreate();
 
-        ContextModule contextModule=new ContextModule( this );
+        ApplicationContextModule applicationContextModule =new ApplicationContextModule( this );
 
-        ApplicationContextComponent component=DaggerApplicationContextComponent.builder()
-                .contextModule(contextModule)
+        component=DaggerApplicationContextComponent.builder()
+                .applicationContextModule( applicationContextModule )
                 .build();
 
         context=component.getContext();
 
 
 
+
+    }
+
+    public ApplicationContextComponent component()
+    {
+
+        return component;
 
     }
 

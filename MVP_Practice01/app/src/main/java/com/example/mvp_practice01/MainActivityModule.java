@@ -9,7 +9,7 @@ import dagger.Provides;
  * Created by tzia on 18-May-17.
  */
 
-@Module(includes = ContextModule.class)
+@Module(includes = ApplicationContextModule.class)
 public class MainActivityModule
 {
 
