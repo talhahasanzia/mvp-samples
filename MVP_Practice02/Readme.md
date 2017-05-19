@@ -19,5 +19,6 @@ A simple MVP implementation using Dager2, a login scenario as a use case.
 - Each feature or package has its dependencies (modules) defined in a dagger2 way.
 - This is by convention and by no means is hard and fast rule to follow.
 - "root" generally means Application level package.
+- Presenter is a mediator between View and Model.
 
 
