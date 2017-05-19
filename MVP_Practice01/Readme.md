@@ -1,3 +1,3 @@
-# Dagger 2 
+# Dagger2 
 
-Simple dagger 2 implementations.
+Simple dagger2 implementations.
