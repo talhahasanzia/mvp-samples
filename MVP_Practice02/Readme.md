@@ -7,7 +7,7 @@ A simple MVP implementation using Dager2, a login scenario as a use case.
 - Each feature has a package eg. Login, Sign Up etc.
 - Each package has interface of its "MVP" name.
 - MVP interface has child interfaces for Model, View and Presenter.
-- Model, View have separate Java classes.
+- Model, Presenter have separate Java classes.
 - Each of above 2 classes implement their interfaces from MVP interface.
 - Activity, Fragment or other UI element implements View from MVP.
 - Activity holds a Presenter instance.
