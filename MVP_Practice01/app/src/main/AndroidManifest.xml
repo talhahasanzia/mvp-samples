@@ -3,6 +3,7 @@
           package="com.example.mvp_practice01">
 
     <application
+        android:name=".MVP_Practice01"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

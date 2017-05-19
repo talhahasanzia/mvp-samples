@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 
+import javax.inject.Inject;
+
 /**
  * Created by tzia on 18-May-17.
  */
@@ -18,8 +20,9 @@ public class MainActivityAdapter implements Adapter
     public MainActivityAdapter()
     {
     }
-
-    public MainActivityAdapter( Context context )
+    // This is our own constructor which made Inject possible
+    @Inject
+    public MainActivityAdapter( MainActivity context )
     {
         this.context = context;
     }

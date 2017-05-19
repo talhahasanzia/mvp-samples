@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by tzia on 17-May-17.
  */
 
-public class MVP_Application extends Application
+public class MVP_Practice01 extends Application
 {
 
     Context context;
@@ -16,9 +16,9 @@ public class MVP_Application extends Application
 
     private ApplicationContextComponent component;
 
-    public static MVP_Application get(AppCompatActivity appCompatActivity)
+    public static MVP_Practice01 get(AppCompatActivity appCompatActivity)
     {
-        return (MVP_Application) appCompatActivity.getApplication();
+        return (MVP_Practice01) appCompatActivity.getApplication();
 
     }
 

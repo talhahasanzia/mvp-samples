@@ -12,6 +12,8 @@ public interface MainActivityComponent
 {
 
 
-    MainActivityAdapter mainActivityAdapter();
+    void injectMainActivity(MainActivity mainActivity);
+    // since its a void type it will go to parameter class and find
+    // inject annotations
 
 }
