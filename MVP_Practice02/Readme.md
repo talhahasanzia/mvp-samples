@@ -1,6 +1,6 @@
 # MVP Implementation
 
-A simple MVP implementation using Dager2, a login scenario as a use case.
+A simple MVP implementation using Dager2, a login scenario as a use case. Here the primary objective was to make our code decoupled (less dependant) on framework (Android APIs). And also following Clean Architecture principles in the implementation.
 
 ## Blueprint:
 
