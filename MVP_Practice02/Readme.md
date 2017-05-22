@@ -14,7 +14,7 @@ A simple MVP implementation using Dager2, a login scenario as a use case.
 - Presenter is injected as a dependency. (using Application object that has Dagger Component instance)
 - In Dagger2 Module, Presenter is provided with its dependencies for example Model using @Provides annotation
   and in our case Model has dependency of LoginRepo which is also handled here in Module.
-- Do not confuse Model with Module, *Model is data model related to MVP and Module is a dependency module related to Dagger*.
+- Do not confuse Model with Module, **Model is data model related to MVP and Module is a dependency module related to Dagger**.
 - Model has all data related work and is accessible via interfaces.
 - Model is not exposed to Framework in our case Android framework.
 - Declare methods in interfaces as what would this module do, leave implementation
