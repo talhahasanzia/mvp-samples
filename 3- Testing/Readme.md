@@ -12,10 +12,10 @@ fact that they follow MVP they are closer to obey Clean Architecture.
 - We use ```when( object.method() ).thenReturn( thisValue )```  to set mock behavior on a method.
 - We use following methods to test case our scenario:
 
-  ```verify( mockView, times( 1 ) ).mockMethod()```    // vrify that mockView's mockMethod was called 1 time.
+  ```verify( mockView, times( 1 ) ).mockMethod()```    // verify that mockView's mockMethod was called 1 time.
   
-  ```verify( mockView, times( 5 ) ).mockMethod()```    // vrify that mockView's mockMethod was called 5 times.
+  ```verify( mockView, times( 5 ) ).mockMethod()```    // verify that mockView's mockMethod was called 5 times.
   
-  ```verify( mockView, never ).mockMethod()```    // vrify that mockView's mockMethod was never called.
+  ```verify( mockView, never ).mockMethod()```    // verify that mockView's mockMethod was never called.
 
         
