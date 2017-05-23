@@ -11,8 +11,11 @@ fact that they follow MVP they are closer to obey Clean Architecture.
 - We use  ```mockModel = mock( LoginActivityMVP.Model.class )``` to mock objects.
 - We use ```when( object.method() ).thenReturn( thisValue )```  to set mock behavior on a method.
 - We use following methods to test case our scenario:
+
   ```verify( mockView, times( 1 ) ).mockMethod()```    // vrify that mockView's mockMethod was called 1 time.
+  
   ```verify( mockView, times( 5 ) ).mockMethod()```    // vrify that mockView's mockMethod was called 5 times.
+  
   ```verify( mockView, never ).mockMethod()```    // vrify that mockView's mockMethod was never called.
 
         
