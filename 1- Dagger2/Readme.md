@@ -10,6 +10,7 @@ Simple dagger2 implementations.
 - Following annotation means search for dependencies in these listed modules or components in some cases:
   ```@Component(modules = {PicassoModule.class})```
 - We can also include components with other component to use dependencies defined in the different components. Example:
+
   ```@Component(modules = {MainActivityModule.class}, dependencies = {ApplicationContextComponent.class})```
 - See [MainActivity.java](https://github.com/talhahasanzia/mvp-samples/blob/master/1-%20Dagger2/app/src/main/java/com/example/mvp_practice01/MainActivity.java) for how to use @inject annotations.
 
