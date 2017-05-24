@@ -73,7 +73,7 @@ public class PresenterTest
         // interact with view since there condition is met
         // So test will fail because we want to test if there are zero interactions,
         // by making our user not null via mockModel.
-        verify( mockView, times( 1 ) );  // verify that above call of getCurrentUser() results in no view interactions
+        verify( mockView, times( 1 ) );  // verify that above call of getCurrentUser() results in 1 view interactions
 
 
     }
