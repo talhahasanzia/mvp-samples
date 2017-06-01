@@ -2,7 +2,7 @@
 package com.example.rxjavaexample.root;
 
 
-import com.example.retrofit.root.ApplicationContextModule;
+
 import com.example.rxjavaexample.MainActivity;
 import com.example.rxjavaexample.http.ApiModule;
 

@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.example.retrofit.root.App;
 import com.example.rxjavaexample.http.apimodel.Stream;
 import com.example.rxjavaexample.http.apimodel.Twitch;
 import com.example.rxjavaexample.http.apimodel.TwitchAPI;
+import com.example.rxjavaexample.root.App;
 import com.example.rxjavaexample.root.ApplicationContextComponent;
 
 import java.util.List;

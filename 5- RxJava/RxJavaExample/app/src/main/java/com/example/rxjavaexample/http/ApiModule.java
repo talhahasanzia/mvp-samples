@@ -2,8 +2,8 @@ package com.example.rxjavaexample.http;
 
 import android.content.Context;
 
-
 import com.example.rxjavaexample.http.apimodel.TwitchAPI;
+import com.example.rxjavaexample.root.ApplicationContextModule;
 
 import java.io.IOException;
 

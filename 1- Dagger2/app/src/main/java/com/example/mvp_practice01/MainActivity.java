@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity
 
         MainActivityComponent mainActivityComponent = DaggerMainActivityComponent.builder()
                 .mainActivityModule( new MainActivityModule( this ) )  // pass module instance
-                .applicationContextComponent( MVP_Practice01.get( this ).component() )  // pass other compoonent instance
+                .applicationContextComponent( MVP_Practice01.get( this ).component() )  // pass other component instance
                 .build();
 
 
