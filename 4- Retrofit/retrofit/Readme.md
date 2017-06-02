@@ -51,11 +51,11 @@ Retrofit is a REST client for Android which makes it easy to consume RESTful API
 
             }
         } );
-      ```
+        ```
   
   
   Here is a link to a good tutorial discussing retrofit in details. 
   
-  Vogella Retrofit tutorial
+  [Vogella Retrofit tutorial](http://www.vogella.com/tutorials/Retrofit/article.html)
   
-  [GitHub Pages](https://pages.github.com/)
+ 
