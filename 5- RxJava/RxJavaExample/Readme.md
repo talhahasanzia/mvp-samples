@@ -19,5 +19,8 @@ Here are few guides:
 - A defined way to handle errors.
 - It reduces the need for state variables, which can be the source of errors == Creating sources,
   subscribing to them and disposing them.
+- Views (See RxBindings by JakeWharton)
+- Event Listeners
+- Creating objects (usually off the main thread)
 
 
