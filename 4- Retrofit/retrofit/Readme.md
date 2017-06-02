@@ -14,8 +14,24 @@ Retrofit is a REST client for Android which makes it easy to consume RESTful API
 - Create Module in dagger2 which will provide dependencies like customized OkHttp3 object, Retrofit object and finally,
   our TwitchAPI interface object.
 - Inject the TwitchAPI in activity using component object.
+- You can use replacement blocks and query parameters to adjust the URL. A replacement block is added to the relative URL with {}. With the help of the @Path annotation on the method parameter, the value of that parameter is bound to the specific replacement block.
+  ```
+  @GET("users/{name}/commits")
+  Call<List<Commit>> getCommitsByName(@Path("name") String name)
+  ```
+- Query parameters are added with the @Query annotation on a method parameter. They are automatically added at the end of the URL.
+   ```
+   @GET("users")
+  Call<User> getUserById(@Query("id") Integer id)
+  ```
+- The @Body annotation on a method parameter tells Retrofit to use the object as the request body for the call.
+   ```
+   @POST("users")
+   Call<User> postUser(@Body User user)
+  ```
 - Use following Retrofit example to see how we made an API request:
-    ```Call<Twitch> call = twitchAPI.getTopGames();
+    ```
+    Call<Twitch> call = twitchAPI.getTopGames();
 
         call.enqueue( new Callback<Twitch>()
         {
@@ -35,5 +51,8 @@ Retrofit is a REST client for Android which makes it easy to consume RESTful API
 
             }
         } );
-      
+      ```
   
+  
+  Here is a link to a good tutorial discussing retrofit in details. 
+  [Vogella: Using Retrofit 2.x as REST client - Tutorial ](http://www.vogella.com/tutorials/Retrofit/article.html)
