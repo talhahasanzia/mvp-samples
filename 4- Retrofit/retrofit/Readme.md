@@ -3,6 +3,8 @@
 This project contains retrofit2 library implementation of a simple GET call to Twitch API. This also follows MVP pattern and
 uses dagger2 for dependency injection.
 
+Here is a link to a good tutorial discussing retrofit in details. [Vogella Retrofit tutorial](http://www.vogella.com/tutorials/Retrofit/article.html)
+
 Retrofit is a REST client for Android which makes it easy to consume RESTful APIs.
 
 ## Notes
@@ -54,8 +56,6 @@ Retrofit is a REST client for Android which makes it easy to consume RESTful API
         ```
   
   
-  Here is a link to a good tutorial discussing retrofit in details. 
   
-  [Vogella Retrofit tutorial](http://www.vogella.com/tutorials/Retrofit/article.html)
   
  
