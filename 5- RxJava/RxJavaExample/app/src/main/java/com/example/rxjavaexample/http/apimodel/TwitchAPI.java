@@ -1,5 +1,6 @@
  package com.example.rxjavaexample.http.apimodel;
 
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
@@ -12,4 +13,7 @@ public interface TwitchAPI
 
     @GET("streams")
     Call<Twitch> getTopGames();
+
+    @GET("streams")
+    Observable<Twitch> getTopGamesObservable();
 }

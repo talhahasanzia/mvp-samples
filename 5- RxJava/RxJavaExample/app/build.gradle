@@ -29,11 +29,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
 
-    //rest interactions
-    compile "com.squareup.retrofit2:retrofit:2.1.0"
+    //rest interactions retrofit
+    compile "com.squareup.retrofit2:retrofit:2.3.0"
 
     //JSON Parsing
-    compile "com.squareup.retrofit2:converter-gson:2.1.0"
+    compile "com.squareup.retrofit2:converter-gson:2.3.0"
     compile 'com.google.code.gson:gson:2.6.2'
 
     //http logging
@@ -43,5 +43,17 @@ dependencies {
     compile 'com.google.dagger:dagger:2.9'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
     provided 'javax.annotation:jsr250-api:1.0'
+
+
+    // rxjava reactive
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+
+    // Butterknife om-nom-omn
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
 
 }

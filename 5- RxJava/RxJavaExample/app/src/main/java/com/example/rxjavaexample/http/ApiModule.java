@@ -2,6 +2,7 @@ package com.example.rxjavaexample.http;
 
 import android.content.Context;
 
+import com.example.rxjavaexample.R;
 import com.example.rxjavaexample.http.apimodel.TwitchAPI;
 import com.example.rxjavaexample.root.ApplicationContextModule;
 
@@ -16,6 +17,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 ;
@@ -72,7 +74,7 @@ public class ApiModule
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
 
 
-        interceptor.setLevel( HttpLoggingInterceptor.Level.BODY );
+        interceptor.setLevel( HttpLoggingInterceptor.Level.HEADERS );
         return httpClient.addInterceptor( interceptor )
                 .build();
 
@@ -85,6 +87,7 @@ public class ApiModule
                 .baseUrl( baseURL )
                 .client( client )
                 .addConverterFactory( GsonConverterFactory.create() )
+                .addCallAdapterFactory( RxJava2CallAdapterFactory.create() )
                 .build();
     }
 
