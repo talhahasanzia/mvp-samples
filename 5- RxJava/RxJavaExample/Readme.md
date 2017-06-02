@@ -8,6 +8,7 @@
         — reactivex.io
         
 Here are few guides:
+
 [Why you should use RxJava in Android a short introduction to RxJava](http://blog.feedpresso.com/2016/01/25/why-you-should-use-rxjava-in-android-a-short-introduction-to-rxjava.html)
 
 [Vogella: RxJava 2.0 - Tutorial](http://www.vogella.com/tutorials/RxJava/article.html)
