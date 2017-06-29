@@ -2,7 +2,7 @@
 
 Sample projects created for MVP implementations.
 
-See [Android Architecture Blueprints](https://github.com/googlesamples/android-architecture) repo for proper guides reagarding
+See [Android Architecture Blueprints](https://github.com/googlesamples/android-architecture) repo for proper guides regarding
 patterns in Android by Google developers.
 
 ## Example implementations for:
