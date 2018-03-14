@@ -59,7 +59,7 @@ public class ServiceTest {
     @Test
     public void failExecutiveBusiness()  throws Exception
     {
-        // Mock initialization to make test fail
+        // Mock initialization to make test pass by verifying it is null
         Service service=mock(Service.class);
 
         // Mock initialization
@@ -76,7 +76,7 @@ public class ServiceTest {
     @Test
     public void failLocalBusiness() throws Exception {
         // do local business test needs only service method to be mocked
-        // but here we disabled mocking so we check the test should fail.
+        // but here we disabled mocking so we check that it is null.
 
         Service service=new Service();
 
