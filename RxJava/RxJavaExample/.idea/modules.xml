@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RxJavaExample.iml" filepath="$PROJECT_DIR$/RxJavaExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\VD\Documents\AndroidProjects\mvp-samples\RxJava\RxJavaExample\RxJavaExample.iml" filepath="C:\Users\VD\Documents\AndroidProjects\mvp-samples\RxJava\RxJavaExample\RxJavaExample.iml" />
+      <module fileurl="file://C:\Users\VD\Documents\AndroidProjects\mvp-samples\RxJava\RxJavaExample\app\app.iml" filepath="C:\Users\VD\Documents\AndroidProjects\mvp-samples\RxJava\RxJavaExample\app\app.iml" />
     </modules>
   </component>
 </project>
