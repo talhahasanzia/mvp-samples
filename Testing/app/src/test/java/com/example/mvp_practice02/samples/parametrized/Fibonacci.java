@@ -1,4 +1,4 @@
-package com.example.mvp_practice02.samples;
+package com.example.mvp_practice02.samples.parametrized;
 
 public class Fibonacci {
     public static int compute(int n) {

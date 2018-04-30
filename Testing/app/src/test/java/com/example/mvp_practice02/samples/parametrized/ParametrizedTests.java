@@ -1,6 +1,4 @@
-package com.example.mvp_practice02.samples;
-
-import android.util.Log;
+package com.example.mvp_practice02.samples.parametrized;
 
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;
