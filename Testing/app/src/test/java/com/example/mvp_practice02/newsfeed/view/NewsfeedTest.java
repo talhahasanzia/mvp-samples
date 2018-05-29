@@ -8,8 +8,9 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import static org.easymock.EasyMock.verify;
+import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 /**
  * Created by Talha Hasan Zia on 30-Apr-18.
@@ -35,7 +36,7 @@ public class NewsfeedTest {
         newsfeedPresenter = new NewsfeedPresenter(view);
         newsfeedPresenter.getNewsfeed(4980);
 
-        verify(view, times(1)); // test if view was interacted
+        verify(view, times(1)).setData(any(String[].class)); // test if view was interacted
     }
 
 }
